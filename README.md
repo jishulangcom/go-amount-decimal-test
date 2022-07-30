@@ -1,0 +1,1 @@
+# go-amount-decimal-test
