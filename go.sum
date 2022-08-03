@@ -1,0 +1,6 @@
+github.com/jishulangcom/go-amount-decimal v0.0.0-20220726142709-644c6f0d7a98 h1:38XBZrvv9sX3GtupoQHYxAITwEZBYB5VgLDAzXuEqDg=
+github.com/jishulangcom/go-amount-decimal v0.0.0-20220726142709-644c6f0d7a98/go.mod h1:1b0oULbVFZ/Htl2GA4lOhCfGrGZ9U8GaTzf8hGsGfH8=
+github.com/jishulangcom/go-fun v0.1.4 h1:vR1vI6U/vJRccCQvDWKC5ds2swE3GxF7EwbAi9YeWYo=
+github.com/jishulangcom/go-fun v0.1.4/go.mod h1:BCGKMZvkbwFz65QsIjBlfMiJ8RaV8wu+vB3iN1pjCoc=
+github.com/shopspring/decimal v1.3.1 h1:2Usl1nmF/WZucqkFZhnfFYxxxu8LG21F6nPQBE5gKV8=
+github.com/shopspring/decimal v1.3.1/go.mod h1:DKyhrW/HYNuLGql+MJL6WCR6knT2jwCFRcu2hWCYk4o=

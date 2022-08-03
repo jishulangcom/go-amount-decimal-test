@@ -1,4 +1,4 @@
-package amountdecimaltest
+package test
 
 import (
 	"fmt"

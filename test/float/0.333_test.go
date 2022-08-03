@@ -1,4 +1,4 @@
-package amountdecimaltest
+package floattest
 
 import (
 	"fmt"
@@ -14,11 +14,14 @@ func Test333(t *testing.T) {
   	c, _ := amountdecimal.New("1").Div("3").ToBigRat() // 1/3
   	fmt.Println("abc:", a, b, c) // abc: 1/3 1/3 1/3
 
-  	strA1, errA1 := amountdecimal.New(0).Add(a).Add(b).Add(c).ToString(nil) // 1/3 + 1/3 + 1/3
-  	fmt.Println("sum:", strA1, errA1) // sum: 1 <nil>
+  	//strA1, errA1 := amountdecimal.New(0).Add(a).Add(b).Add(c).ToString(nil) // 0 + 1/3 + 1/3 + 1/3
+  	//fmt.Println("A1:", strA1, errA1) // A1: 1 <nil>
 
-	strA2, errA2 := amountdecimal.New(0).Add(a).Add(b).Add(c).ToString(3) // 1/3 + 1/3 + 1/3
-	fmt.Println("sum:", strA2, errA2) // sum: 1.000 <nil>
+	strA2, errA2 := amountdecimal.New(0).Add(a).Add(b).Add(c).ToString(3) // 0 + 1/3 + 1/3 + 1/3
+	fmt.Println("A2:", strA2, errA2) // A2: 1.000 <nil>
+
+	strA3, errA3 := amountdecimal.New(0).Add(a, b, c).ToString(3) // 0 + 1/3 + 1/3 + 1/3
+	fmt.Println("A3:", strA3, errA3) // A3: 1.000 <nil>
 	fmt.Println()
 
 
@@ -27,8 +30,8 @@ func Test333(t *testing.T) {
 
   	val := 0.333
 	//val := math.MaxFloat64
-	strB1, errB1 := amountdecimal.New(val).Add(val).Add(val).ToString(nil)
-	fmt.Println("B1:", strB1, errB1) // B1: 0.999 <nil>
+	//strB1, errB1 := amountdecimal.New(val).Add(val).Add(val).ToString(nil)
+	//fmt.Println("B1:", strB1, errB1) // B1: 0.999 <nil>
 
 	strB2, errB2 := amountdecimal.New(val).Add(val).Add(val).ToString(2)
 	fmt.Println("B2:", strB2, errB2) // B2: 1.00 <nil>
@@ -42,8 +45,8 @@ func Test333(t *testing.T) {
 
 	valC := 0.333
 	//val := math.MaxFloat64
-	strC1, errC1 := amountdecimal.New(valC).Mul(valC).Mul(valC).ToString(nil)
-	fmt.Println("C1:", strC1, errC1) // C1: 0.037 <nil>
+	//strC1, errC1 := amountdecimal.New(valC).Mul(valC).Mul(valC).ToString(nil)
+	//fmt.Println("C1:", strC1, errC1) // C1: 0.037 <nil>
 
 	strC2, errC2 := amountdecimal.New(valC).Mul(valC).Mul(valC).ToString(2)
 	fmt.Println("C2:", strC2, errC2) // C2: 0.04 <nil>
@@ -55,8 +58,8 @@ func Test333(t *testing.T) {
 	//--------------------【1 / 3 = ?】-------------------------------
 	fmt.Println("\n--------------------【1 / 3 = ?】-------------------------------")
 	valD := 3
-	strD1, errD1 := amountdecimal.New(1).Div(valD).ToString(nil)
-	fmt.Println("D1:", strD1, errD1) // C1: 0.037 <nil>
+	//strD1, errD1 := amountdecimal.New(1).Div(valD).ToString(nil)
+	//fmt.Println("D1:", strD1, errD1) // C1: 0.037 <nil>
 
 	strD2, errD2 := amountdecimal.New(1).Div(valD).ToString(2)
 	fmt.Println("D2:", strD2, errD2) // C2: 0.04 <nil>

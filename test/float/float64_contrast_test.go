@@ -3,7 +3,7 @@ package floattest
 import (
 	"fmt"
 	amountdecimal "github.com/jishulangcom/go-amount-decimal"
-	"github.com/jishulangcom/go-amount-decimal/test"
+	"github.com/jishulangcom/go-amount-decimal-test/test"
 	"github.com/shopspring/decimal"
 	"testing"
 )
