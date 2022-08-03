@@ -2,7 +2,7 @@ package inttest
 
 import (
 	"fmt"
-	"github.com/jishulangcom/go-amount-decimal/test"
+	"github.com/jishulangcom/go-amount-decimal-test/test"
 	"testing"
 	"time"
 )
