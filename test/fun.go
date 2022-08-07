@@ -55,7 +55,6 @@ func RandIntList(min, max int, n int) []int {
 
 func RandInt(min, max int) int {
 	rand.Seed(time.Now().UnixNano())
-	fmt.Println(min, max)
 	if min == 0 && max == 0 {
 		return 0
 	}
