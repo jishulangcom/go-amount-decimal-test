@@ -31,26 +31,26 @@ func Float64Add(v float64, v2 float64) {
 	fmt.Printf("\n\r ----------%v + %v ------------------------\n", v, v2)
 
 	res, err := Float64CalculationAmountDecimal(test.Add, v, v2)
-	fmt.Printf("AmountDecimal  result:%v, %v \n", err, res)
+	fmt.Printf("amountdecimal  result:%v, %v \n", err, res)
 	if err != nil {
 		panic(err)
 	}
 
 	res2, err2 := Float64CalculationAmountDecimal2(test.Add, v, v2)
-	fmt.Printf("AmountDecimal result2:%v, %v \n", err2, res2)
+	fmt.Printf("amountdecimal result2:%v, %v \n", err2, res2)
 	if err2 != nil {
 		panic(err2)
 	}
 
 	res3, err3 := Float64CalculationDecimal(test.Add, v, v2)
-	fmt.Printf("Decimal result:%v, %v \n", err3, res3)
+	fmt.Printf("decimal result:%v, %v \n", err3, res3)
 
 	if res != res2 {
-		panic("AmountDecimal New与NewInt不相等")
+		panic("amountdecimal New与NewInt不相等")
 	}
 
 	if res != res3 {
-		panic("AmountDecimal与Decimal不相等")
+		panic("amountdecimal与decimal不相等")
 	}
 }
 
@@ -58,26 +58,26 @@ func Float64Sub(v float64, v2 float64) {
 	fmt.Printf("\n\r ----------%v - %v ------------------------\n", v, v2)
 
 	res, err := Float64CalculationAmountDecimal(test.Sub, v, v2)
-	fmt.Printf("AmountDecimal  result:%v, %v \n", err, res)
+	fmt.Printf("amountdecimal  result:%v, %v \n", err, res)
 	if err != nil {
 		panic(err)
 	}
 
 	res2, err2 := Float64CalculationAmountDecimal2(test.Sub, v, v2)
-	fmt.Printf("AmountDecimal result2:%v, %v \n", err2, res2)
+	fmt.Printf("amountdecimal result2:%v, %v \n", err2, res2)
 	if err2 != nil {
 		panic(err2)
 	}
 
 	res3, err3 := Float64CalculationDecimal(test.Sub, v, v2)
-	fmt.Printf("Decimal result:%v, %v \n", err3, res3)
+	fmt.Printf("decimal result:%v, %v \n", err3, res3)
 
 	if res != res2 {
-		panic("AmountDecimal New与NewInt不相等")
+		panic("amountdecimal New与NewInt不相等")
 	}
 
 	if res != res3 {
-		panic("AmountDecimal与Decimal不相等")
+		panic("amountdecimal与decimal不相等")
 	}
 }
 
@@ -85,26 +85,26 @@ func Float64Mul(v float64, v2 float64) {
 	fmt.Printf("\n\r ----------%v * %v ------------------------\n", v, v2)
 
 	res, err := Float64CalculationAmountDecimal(test.Mul, v, v2)
-	fmt.Printf("AmountDecimal  result:%v, %v \n", err, res)
+	fmt.Printf("amountdecimal  result:%v, %v \n", err, res)
 	if err != nil {
 		panic(err)
 	}
 
 	res2, err2 := Float64CalculationAmountDecimal2(test.Mul, v, v2)
-	fmt.Printf("AmountDecimal result2:%v, %v \n", err2, res2)
+	fmt.Printf("amountdecimal result2:%v, %v \n", err2, res2)
 	if err2 != nil {
 		panic(err2)
 	}
 
 	res3, err3 := Float64CalculationDecimal(test.Mul, v, v2)
-	fmt.Printf("Decimal result:%v, %v \n", err3, res3)
+	fmt.Printf("decimal result:%v, %v \n", err3, res3)
 
 	if res != res2 {
-		panic("AmountDecimal New与NewInt不相等")
+		panic("amountdecimal New与NewInt不相等")
 	}
 
 	if res != res3 {
-		panic("AmountDecimal与Decimal不相等")
+		panic("amountdecimal与decimal不相等")
 	}
 }
 
@@ -112,28 +112,28 @@ func Float64Div(v float64, v2 float64) {
 	fmt.Printf("\n\r ----------%v / %v ------------------------\n", v, v2)
 
 	res, err := Float64CalculationAmountDecimal(test.Div, v, v2)
-	fmt.Printf("AmountDecimal  result:%v, %v \n", err, res)
+	fmt.Printf("amountdecimal  result:%v, %v \n", err, res)
 	if err != nil {
 		fmt.Println("calculation_amountdecimal err:", err)
 		panic(err)
 	}
 
 	res2, err2 := Float64CalculationAmountDecimal2(test.Div, v, v2)
-	fmt.Printf("AmountDecimal result2:%v, %v \n", err2, res2)
+	fmt.Printf("amountdecimal result2:%v, %v \n", err2, res2)
 	if err2 != nil {
 		fmt.Println("calculation_amountdecimal2 err:", err2)
 		panic(err2)
 	}
 
 	res3, err3 := Float64CalculationDecimal(test.Div, v, v2)
-	fmt.Printf("Decimal result:%v, %v \n", err3, res3)
+	fmt.Printf("decimal result:%v, %v \n", err3, res3)
 
 	if res != res2 {
-		panic("AmountDecimal New与NewInt不相等")
+		panic("amountdecimal New与NewInt不相等")
 	}
 
 	if res != res3 {
-		panic("AmountDecimal与Decimal不相等")
+		panic("amountdecimal与decimal不相等")
 	}
 }
 
